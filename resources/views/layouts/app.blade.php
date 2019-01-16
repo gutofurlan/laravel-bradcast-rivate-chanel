@@ -76,5 +76,18 @@
             @yield('content')
         </main>
     </div>
+
+<script src="http://localhost:6001/socket.io/socket.io.js"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
+        <script>
+            window.Laravel = {!! json_encode([
+                'user' => auth()->check() ? auth()->user()->id : null,
+            ]) !!};
+            window.Echo.private('user.' + window.Laravel.user)
+                .listen('PrivateEvent', (e) => {
+                    console.log(e);
+                });
+        </script>
+
 </body>
 </html>

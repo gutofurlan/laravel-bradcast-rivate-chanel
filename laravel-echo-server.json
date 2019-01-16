@@ -3,8 +3,8 @@
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{
-			"appId": "477646ceee2dcdf5",
-			"key": "8add33f79bb31822417451fe6105ec5a"
+			"appId": "b90130a5f09c499d",
+			"key": "6b3411bc5bc41dca67ac11884a018b0b"
 		}
 	],
 	"database": "redis",
@@ -25,7 +25,7 @@
 	"sslPassphrase": "",
 	"subscribers": {
 		"http": true,
-		"redis": true
+		"redis": false
 	},
 	"apiOriginAllow": {
 		"allowCors": false,
