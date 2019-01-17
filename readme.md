@@ -1,6 +1,7 @@
 - start laravel
 - composer require pusher/pusher-php-server "~3.0"
 - composer require predis/predis
+- npm install laravel-echo --save
 - npm install --save socket.io-client
 - npm install -g laravel-echo-server
 - redis-cli
